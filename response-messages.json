@@ -1,0 +1,10 @@
+{
+    "REGISTRATION_SUCCESS": "User registered successfully",
+    "REGISTRATION_FAILED": "Registration failed",
+    "AUTH_FAILED": "Authentication failed",
+    "LOGIN_FAILED": "Login failed",
+    "ACCESS_DENIED": "Access denied",
+    "INVALID_TOKEN": "Invalid token",
+    "USERNAME_REQUIRED": "username required",
+    "USERNAME_PASS_REQUIRED": "username and password required"
+}

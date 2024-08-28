@@ -1,0 +1,4 @@
+{
+    "authKey": "auth-app-key",
+    "tokenExpiry": "1h"
+}
