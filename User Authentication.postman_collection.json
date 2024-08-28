@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "c5ded3f2-25af-4b59-a4e3-31a0524f93e4",
+		"name": "User Authentication",
+		"description": "A Express NodeJS application that supports:\n\n1. User Registration\n    \n2. User Login\n    \n3. Secured Homepage (requires Authorization token)\n    \n4. Secured Users page (requires Authorization token)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6275752"
+	},
+	"item": [
+		{
+			"name": "User Registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"abhay verma\",\n    \"password\": \"test123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"abhay verma\",\n    \"password\": \"test123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Homepage",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyOGEwZTBmOS0zODM2LTRlNDctYTc2OC04MTFjYjZkY2U2YmUiLCJ1c2VybmFtZSI6ImFiaGF5IHZlcm1hIiwiaWF0IjoxNzI0ODUyOTExLCJleHAiOjE3MjQ4NTY1MTF9.tBNEmFQdS5twgWuQMR1_bDeWicCdHNY1lRzoY1j6CO0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users Page",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyOGEwZTBmOS0zODM2LTRlNDctYTc2OC04MTFjYjZkY2U2YmUiLCJ1c2VybmFtZSI6ImFiaGF5IHZlcm1hIiwiaWF0IjoxNzI0ODUyOTExLCJleHAiOjE3MjQ4NTY1MTF9.tBNEmFQdS5twgWuQMR1_bDeWicCdHNY1lRzoY1j6CO0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

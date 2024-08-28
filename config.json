@@ -1,4 +1,5 @@
 {
     "authKey": "auth-app-key",
-    "tokenExpiry": "1h"
+    "tokenExpiry": "1h",
+    "port": 8080
 }

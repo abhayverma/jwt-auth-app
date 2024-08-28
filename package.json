@@ -2,6 +2,11 @@
   "name": "auth-app",
   "version": "0.0.0",
   "private": true,
+  "author": {
+    "name": "Abhay Verma",
+    "email": "aabhay.v@gmail.com",
+    "url": "https://www.linkedin.com/in/socialabhay/"
+  },
   "scripts": {
     "start": "node -r node-localstorage/register models/User.js && node ./bin/www"
   },
